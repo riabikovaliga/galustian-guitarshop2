@@ -1,0 +1,21 @@
+.navigation {
+  margin-right: 36px;
+}
+
+.navigation__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 45px;
+  }
+  line-height: 20px;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  @include font($line-height: 20px);
+  letter-spacing: 0.05em;
+}

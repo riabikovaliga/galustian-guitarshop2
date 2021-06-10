@@ -1,0 +1,57 @@
+.button {
+  display: block;
+  @include font(16px, 15px, 700, white);
+  text-decoration: none;
+  border-radius: 2px;
+  border: none;
+  padding: 4px 9px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+
+  &--gray {
+    background-color: rgba(193, 193, 193, 1);
+
+    &:hover {
+      background-color: rgba(88, 87, 87, 1);
+    }
+
+    &:active {
+      background-color: rgba(159, 158, 158, 1);
+    }
+  }
+
+  &--orange {
+    background-color: rgba(226, 127, 0, 1);
+
+    &:hover {
+      background-color: rgba(255, 168, 57, 1);
+    }
+
+    &:active {
+      background-color: rgba(218, 139, 38, 1);
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: rgba(88, 87, 87, 1);
+    border: 1px solid rgba(88, 87, 87, 1);
+
+    &:hover {
+      color: rgba(88, 87, 87, 0.7);
+    }
+
+    &:active {
+      color: rgba(88, 87, 87, 0.5);
+    }
+  }
+
+  &--close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+    background: transparent url(../../img/button-close-icon.svg) no-repeat
+      center;
+  }
+}

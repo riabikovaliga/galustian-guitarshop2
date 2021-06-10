@@ -1,0 +1,49 @@
+.sort {
+  padding: 24px 12px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.09em;
+}
+
+.sort h2 {
+  margin: 0;
+  @include font(16px, 20px, 400);
+}
+
+.sort__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--type {
+    margin-right: 225px;
+  }
+}
+
+.sort__checkbox {
+  &--type:checked + label {
+    color: $font-color;
+  }
+  &--direction:checked + label {
+    & svg path {
+      fill: black;
+    }
+  }
+}
+.sort__label {
+  @include font(16px, 20px, 400, rgba(88, 87, 87, 1));
+  cursor: pointer;
+
+  &--direction-up {
+    margin-right: 2px;
+    padding: 10px;
+  }
+
+  &--direction-down {
+    padding: 10px 0 10px 10px;
+  }
+  &--type-price {
+    margin-right: 36px;
+  }
+}
